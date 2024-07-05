@@ -1,0 +1,35 @@
+enable_penguins = {
+
+	penguins_launch = {
+		priority = -1
+		allowed = {
+			always = yes
+			is_ai = no
+		}
+
+		visible = {
+			NOT = { has_global_flag = penguins_died }
+			NOT = { has_global_flag = penguins_start }
+		}
+		complete_effect = {
+			country_event = { id = ANT_events.1000 }
+		}
+	}
+
+	penguins_banned = {
+		priority = -1
+		allowed = {
+			always = yes
+			is_ai = no
+		}
+
+		visible = {
+			NOT = { has_global_flag = penguins_died }
+			NOT = { has_global_flag = penguins_start }
+		}
+		complete_effect = {
+			set_global_flag = penguins_died
+		}
+	}
+
+}

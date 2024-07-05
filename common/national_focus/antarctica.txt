@@ -1,0 +1,250 @@
+focus_tree = {
+	id = antarctica_focus
+	
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = ANT
+		}
+	}
+	continuous_focus_position = { x = 55 y = 1500 }
+
+	default = no
+
+	focus = {
+		id = ANT_fascism_path
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus =  ANT_neutrality_path focus = ANT_democracy_path focus = ANT_communism_path }
+		x = 5
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				AND = {
+					NOT = {
+						has_completed_focus = ANT_neutrality_path
+					}
+					NOT = {
+						has_completed_focus = ANT_democracy_path
+					}
+					NOT = {
+						has_completed_focus = ANT_communism_path
+					}
+				}
+				
+			}
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_neutrality_path
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus =  ANT_fascism_path focus = ANT_democracy_path focus = ANT_communism_path }
+
+		x = 15
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				AND = {
+					NOT = {
+						has_completed_focus = ANT_fascism_path
+					}
+					NOT = {
+						has_completed_focus = ANT_democracy_path
+					}
+					NOT = {
+						has_completed_focus = ANT_communism_path
+					}
+				}
+				
+			}
+		}
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ANT_neutrality_path
+			}
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_democracy_path
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus =  ANT_fascism_path focus = ANT_neutrality_path focus = ANT_communism_path }
+		x = 25
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				AND = {
+					NOT = {
+						has_completed_focus = ANT_neutrality_path
+					}
+					NOT = {
+						has_completed_focus = ANT_fascism_path
+					}
+					NOT = {
+						has_completed_focus = ANT_communism_path
+					}
+				}
+				
+			}
+		}
+		offset = {
+			x = -20
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ANT_democracy_path
+			}
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_communism_path
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus =  ANT_fascism_path focus = ANT_democracy_path focus = ANT_neutrality_path }
+		x = 35
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				AND = {
+					NOT = {
+						has_completed_focus = ANT_neutrality_path
+					}
+					NOT = {
+						has_completed_focus = ANT_democracy_path
+					}
+					NOT = {
+						has_completed_focus = ANT_fascism_path
+					}
+				}
+				
+			}
+		}
+		offset = {
+			x = -30
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ANT_communism_path
+			}
+		}
+		
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+}

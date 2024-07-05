@@ -1,0 +1,49 @@
+﻿
+add_namespace = ANT_events
+
+#start the adventrue of penguins
+country_event = {
+	id = ANT_events.1000
+	title = ANT_events.1000.t
+	desc = ANT_events.1000.d
+	
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = { # Make penguins great again!
+		name = ANT_events.1000.a
+		ai_chance = {
+			base = 0
+		}
+
+		set_global_flag = penguins_start
+		ANT = { transfer_state = 518 }
+		ANT = { transfer_state = 723 }
+		518 = { add_core_of = ANT }
+		723 = { add_core_of = ANT }
+		ANT = {
+			change_tag_from = ROOT
+		}
+	}
+
+	option = { # FIGHT WITH PENGUINS
+		name = ANT_events.1000.b
+		ai_chance = {
+			base = 0
+		}
+
+		set_global_flag = penguins_start
+		ANT = { transfer_state = 518 }
+		ANT = { transfer_state = 723 }
+		518 = { add_core_of = ANT }
+		723 = { add_core_of = ANT }
+	}
+
+	option = { # Ridiculous
+		name = ANT_events.1000.c
+		ai_chance = {
+			base = 100
+		}
+	}
+}
