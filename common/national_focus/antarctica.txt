@@ -247,4 +247,619 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ANT_demand_newzealand
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_fascism_path }
+		x = 3
+		y = 1
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_demand_australia
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_demand_newzealand }
+		x = 3
+		y = 2
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_military_penguins
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_fascism_path }
+		x = -3
+		y = 1
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_king_of_antractic
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_military_penguins }
+		x = -3
+		y = 2
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_pacific_diplomatic
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_king_of_antractic }
+		prerequisite = { focus = ANT_demand_australia }
+		x = 0
+		y = 3
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_friend_germany
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_pacific_diplomatic }
+		mutually_exclusive = { focus =  ANT_lone_penguin focus = ANT_friend_japan }
+		x = -2
+		y = 4
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_lone_penguin
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_pacific_diplomatic }
+		mutually_exclusive = { focus =  ANT_friend_germany focus = ANT_friend_japan }
+		x = 0
+		y = 4
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_friend_japan
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_pacific_diplomatic }
+		mutually_exclusive = { focus =  ANT_lone_penguin focus = ANT_friend_germany }
+		x = 2
+		y = 4
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_germany_military_advisor
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_friend_germany }
+		x = -3
+		y = 5
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_germany_technology
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_germany_military_advisor }
+		x = -3
+		y = 7
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_request_scandi
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_germany_military_advisor }
+		x = -5
+		y = 6
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_demand_tierra_del_fuego
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_lone_penguin focus = ANT_friend_germany focus = ANT_friend_japan }
+		x = -1
+		y = 5
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_invade_patagonia
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_demand_tierra_del_fuego }
+		x = -1
+		y = 6
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_the_northern_thrust
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_lone_penguin focus = ANT_friend_japan focus = ANT_friend_germany }
+		x = 1
+		y = 5
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_protect_indonesea
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_the_northern_thrust }
+		x = 1
+		y = 6
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_japan_military_advisor
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_friend_japan }
+		x = 3
+		y = 5
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_contact_japan_scientists
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_japan_military_advisor }
+		x = 3
+		y = 7
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_defend_new_home
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_invade_patagonia }
+		prerequisite = { focus = ANT_protect_indonesea }
+		x = 0
+		y = 7
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ANT_rise_of_the_nation_of_the_penguins
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_defend_new_home }
+		prerequisite = { focus = ANT_germany_technology focus = ANT_contact_japan_scientists focus = ANT_lone_penguin }
+		x = 0
+		y = 8
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_evolution_of_penguins
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_rise_of_the_nation_of_the_penguins }
+		x = 0
+		y = 9
+		relative_position_id = ANT_fascism_path
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ANT_infinite_white
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ANT_neutrality_path }
+		x = 0
+		y = 1
+		relative_position_id = ANT_neutrality_path
+		cost = 1000
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICS }
+		complete_tooltip = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
 }
